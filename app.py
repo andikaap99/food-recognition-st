@@ -51,5 +51,71 @@ if 'img' in locals():
     predicted_label = labels[predicted_class_index]
 
     st.write("Prediction:", predicted_label)
-    st.write("Classes:", classes)
 
+    with st.expander('Macronutrient Detail'):
+        match predicted_class_index:
+            case 0:
+                st.write('Per 100 gr ')
+                st.write('Calori    : 250 kcal')
+                st.write('Protein   : 25 gr')
+                st.write('Fat       : 15 gr')
+            case 1:
+                st.write('Per 120 gr ')
+                st.write('Calori    : 295 kcal')
+                st.write('Protein   : 17 gr')
+                st.write('Fat       : 14 gr')
+            case 2:
+                st.write('Per 100 gr ')
+                st.write('Calori    : 312 kcal')
+                st.write('Protein   : 3.4 gr')
+                st.write('Fat       : 15 gr')
+            case 3:
+                st.write('Per 200 gr ')
+                st.write('Calori    : 345 kcal')
+                st.write('Protein   : 15 gr')
+                st.write('Fat       : 18 gr')
+            case 4:
+                st.write('Per 100 gr ')
+                st.write('Calori    : 260 kcal')
+                st.write('Protein   : 28 gr')
+                st.write('Fat       : 12 gr')
+            case 5:
+                st.write('Per 200 gr ')
+                st.write('Calori    : 410 kcal')
+                st.write('Protein   : 10 gr')
+                st.write('Fat       : 17 gr')
+            case 6:
+                st.write('Per 200 gr ')
+                st.write('Calori    : 400 kcal')
+                st.write('Protein   : 9 gr')
+                st.write('Fat       : 18 gr')
+            case 7:
+                st.write('Per 300 gr ')
+                st.write('Calori    : 700 kcal')
+                st.write('Protein   : 20 gr')
+                st.write('Fat       : 35 gr')
+            case 8:
+                st.write('Per 100 gr ')
+                st.write('Calori    : 285 kcal')
+                st.write('Protein   : 12 gr')
+                st.write('Fat       : 10 gr')
+            case 9:
+                st.write('Per 250 gr ')
+                st.write('Calori    : 320 kcal')
+                st.write('Protein   : 25 gr')
+                st.write('Fat       : 18 gr')
+            case 10:
+                st.write('Per 150 gr ')
+                st.write('Calori    : 470 kcal')
+                st.write('Protein   : 28 gr')
+                st.write('Fat       : 30 gr')
+            case 11:
+                st.write('Per 10 skewers ')
+                st.write('Calori    : 350 kcal')
+                st.write('Protein   : 26 gr')
+                st.write('Fat       : 22 gr')
+            case 12:
+                st.write('Per 250 gr ')
+                st.write('Calori    : 275 kcal')
+                st.write('Protein   : 18 gr')
+                st.write('Fat       : 10 gr')
